@@ -1,0 +1,7771 @@
+#LyX 1.5.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass book
+\language english
+\inputencoding utf8
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing onehalf
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\lang bahasa
+Senayan Manual
+\newline
+Based on Senayan3-stable8
+\begin_inset Foot
+status collapsed
+
+\begin_layout Standard
+
+\lang bahasa
+edited with LyX on Ubuntu 8.04
+\end_layout
+
+\end_inset
+
+
+\newline
+
+\emph on
+English Version
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+
+\newpage
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/senayan2_logtypekecil.png
+	scale 450
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+
+\newpage
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+\lang bahasa
+Credit Title: 
+\newline
+Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha
+ (dicarve@yahoo.com) – Arif Syamsudin (buitenzorg812@yahoo.com) – M.
+ Rasyid Ridho (ridho_edogawa@yahoo.com) –Sulfan Zayd (sulfan@gmail.com) --
+ Purwoko (tamanjiwa@gmail.com) -- Wardiyono (wynerst@gmail.com)
+\end_layout
+
+\begin_layout Standard
+\align center
+Special Contributor:
+\newline
+
+\emph on
+Rina Dewanti (rindeast@gmail.com) Fiqru Mafar (fiqru_mafar@yahoo.com),
+\newline
+ Veri
+ Maria Okta (veri_maria_okta@yahoo.com)
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\lang bahasa
+This Document Released with the Creative Common License (CCL)
+\newline
+
+\begin_inset LatexCommand url
+target "http://creativecommons.org/about/licenses/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/cc_large-300x300.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+
+\newpage
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+No furniture so charming as books.
+ - Sydney Smith
+\newline
+
+\end_layout
+
+\begin_layout Standard
+SENAYAN is an Open Source Software for library automation.
+ SENAYAN is a web based application which has many features and modules
+ that has been developing.
+ SENAYAN is suitable for a library which has many book collection, members,
+ and staff in one network, even in local area network or Internet.
+ 
+\end_layout
+
+\begin_layout Standard
+SENAYAN is a multi-platform application that can run natively in all the
+ operating system where the PHP (http://www.php.net) and RDMS MySQL (http://www.mys
+ql.com) can run and work in.
+ SENAYAN is developed under GNU/Linux platform and can run in the other
+ platform such as UNIX *BSD and Windows.
+ 
+\end_layout
+
+\begin_layout Standard
+SENAYAN is a web based application that considered the cross-platform, and
+ it is developed by using Open Source Software such as PHP Web Scripting
+ Language, and MySQL Database Server.
+ In order to increase the interactivity like the other desktop application,
+ SENAYAN also use the Asynchronous JavaScript And XML (AJAX) technology.
+ 
+\end_layout
+
+\begin_layout Standard
+SENAYAN also use Open Source Software to add the feature such as PHPThumb
+ and Simbio.
+ SENAYAN is developed under GPLv3 license that gives a right to use, study,
+ copy, modify, and redistribute computer programs.
+ For further information about GPLv3, please visit http://www.gnu.org/liicences/gp
+l-3.0.html.
+\end_layout
+
+\begin_layout Standard
+SENAYAN 1st and 2nd versions are not released to the public due to trial
+ version.
+ SENAYAN 3rd version is assumed as a stable version to release to the public.
+ and it is the time for testing this software in operation to the librarian.
+ By this method, SENAYAN can be reviewed by the public, and become more
+ stable, and many modules are added in the application.
+ For trying the demo version and for downloading SENAYAN software, please
+ visit http://senayan.diknas.go.id.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Senayan feature: 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Online Public Access Catalog (OPAC) with thumbnail that is generated on-the-fly.
+ Thumbnail is used to show the book cover.
+ Search mode available on simple search & advance search.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Detail record is also available in the XML format (ectensible markup language)
+ for web service need.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Bibliography data management, that’s efficient to minimize data redundance.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Master file management is to referensiall data like GMD (general material
+ designation), collection type, publisher, author, location, supplier, etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Circullation with feature: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang bahasa
+Loan and return transaction 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Collection reservation 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Flexible rules of loan 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Membership managemenet 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Collection inventory (Stock taking) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Statistic & report Senayan is support any language format except latin.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang bahasa
+Sistem modul with featuire: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang bahasa
+Global system configuration.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Modul managemenet User (library staff) & group management 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Holiday controls 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Automatic barcode making 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Utilities for backup.
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Installation
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Installing SENAYAN from the Source
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+Education is the passport to the future, for tomorrow belongs to those who
+ prepare for it today (Malcolm X)
+\newline
+
+\emph default
+\color inherit
+\lang english
+Make sure the web server, MySQL database server, and PHP scripting engine
+ has been installed well and work properly.
+ It will be easier if PhpMyAdmin also has been installed because it will
+ help to setup the database via interface web.
+ If you use Windows as your Operating System, we recommend you to use SENAYAN
+ portable, it is the stable version and easy to install and to back up,
+ you just copy its file to the folder.
+ 
+\end_layout
+
+\begin_layout Standard
+It is recommended to install SENAYAN from the source when you use the other
+ platform such as GNU/Linux and UNIX because of the various condition.
+ In the GNU/Linux platform, Web Server, MySQL and PHP can be installed from
+ the binary package of the distro or you can installed them from the source
+ that gives flexibility.
+ 
+\end_layout
+
+\begin_layout Standard
+SENAYAN is developed in the GNU/Linux platform (Zenwalk and Ubuntu), and
+ have been tried for production scale in various server based on Centos
+ Linux, OpenSUSE, Linux, FreeBSD and Windows.
+ If you use SENAYAN in public domain (Internet), it is recommended to improve
+ the security system by using firewall in the 3rd and 4th layer or in TCP/IP
+ section.
+ For example modsecurity please visit http://www.modsecutiy.org and http://www.gree
+nsql.net
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Here the manual: 
+\begin_inset LatexCommand url
+target "http://hendrowicaksono.multiply.com/journal/item/54"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-01.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+Put the SENAYAN source code in web document root
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now put the SENAYAN source code in web document root web server that you
+ are used.
+ For example, we used Ubuntu Linux and we have been installed Apache Webserver
+ from the source code.
+ The web document root is in the path of {/usr/local/apache/htdocs/}.
+ If you installed Apache from the repository of Ubuntu, the web document
+ root is in the path of {/var/www}.
+ In the OpenSUSE, the web document root is in the path of {/srv/www/htdocs}.
+ But if you use xampplite, the web document root is in the path pf 
+\backslash
+xampplite
+\backslash
+htdocs.
+ And if you use Windows as your operating system, then you have been installed
+ the Apache Web Server not from the AMP package, the web document root is
+ in the path of
+\lang bahasa
+
+\begin_inset LatexCommand url
+target "\\program files\\apache group\\apache2\\htdocs"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-02.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Ekstract senayan*.tar.gz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-03.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Extraction Result
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+after that, extract senayan3-*.tar.gz file in the same directory.
+ You can use Winzip, 7zip, and all the extraction application.
+ In the Linux, you can use the command for extracting file in the terminal
+ or shell.
+ Here is the command for extracting file in Ubuntu.
+ 
+\end_layout
+
+\begin_layout Standard
+Open the Terminal, and type this code: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> sudo gunzip -d -c senayan3-stable1.tar.gz | sudo tar xvf - 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-04.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Create database
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then the directory of senayan3-stable1 will be created.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> cd senayan3-stable1
+\end_layout
+
+\begin_layout Standard
+There is two sql files in the directory of senayan3-stable1.
+ Both of them will be inserted to the structure and data as a sample data
+ in the SENAYAN.
+ 
+\end_layout
+
+\begin_layout Standard
+If you want to see two sql files, please type this command in the terminal:
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> ls -la *.sql 
+\end_layout
+
+\begin_layout Standard
+Now, login as a user that has a privileges to create the database (e.g.
+ root).
+ Then create the database, and name it as senayan.
+\end_layout
+
+\begin_layout Standard
+Here is the command to create the new database
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> CREATE DATABASE senayan; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> SHOW DATABASES; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> quit;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-05.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Create database by phpMyAdmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-06.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Restore senayan database bith MySQL console
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next, create the new structure data in SENAYAN, and install the sample data.
+\end_layout
+
+\begin_layout Standard
+Please type this command in the terminal: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p senayan < senayan.sql 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p senayan < sample_data.sql
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-07.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Restore senayan database with phpMyAdmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-08.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Create database user with MySQL console
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here is the optional instruction By considering the security system, you
+ can create the dedicated mysql user for senayan database.
+ 
+\end_layout
+
+\begin_layout Standard
+Please type this command in our terminal:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> GRANT ALL PRIVILEGES ON senayan.* TO 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+'senayanuser'@'localhost' IDENTIFIED BY 'password_senayanuser';
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-09.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Sysconfig.inc.php configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-10.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+New Configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next step is editing the syscongfig.inc file using the editor application
+ such as Vim, Text Editor, and etc.
+ Then change the database connection configuration.
+ If the database name is different, then we should change value of the DB_NAME,
+ so does the DB USRENAME AND DB_PASSWORD.
+ Finally, save the change and close your editor application.
+ 
+\end_layout
+
+\begin_layout Standard
+Make sure Apache Web Server has a privilege to write to the images and files
+ directory.
+ There are two ways to make Apache Web Server has a privilege to write to
+ the images and files directory.
+ First, change the access permissions.
+ 
+\end_layout
+
+\begin_layout Standard
+Here is the command you should type in terminal: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chmod -R 777 images 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chmod -R 777 files
+\end_layout
+
+\begin_layout Standard
+Second, change the ownership of files and directories
+\end_layout
+
+\begin_layout Standard
+Here is the command you should type in the terminal to change the owner
+ of the directory: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chown -R daemon images 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chown -R daemon files
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-11.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Senayan ready for use
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After that, open your browser (we recommend to use Mozilla Firefox), and
+ then type http://localhost/senayan3-stable1.
+ The front page of SENAYAN will appears in your computer.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Installing Portable Senayan in Windows
+\end_layout
+
+\begin_layout Standard
+Portable Senayan for Windows is a package consist of six application; Senayan,
+ Apache Web Server, PHP Scripting engine, MySQL database Server, and PphMyAdmin.
+ This package is dedicated to the people who want to install SENAYAN more
+ practice and more easy.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-12.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Copy psenayan*.zip to the root directory/folder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Copy file psenayan-x.x.zip (for example psenayan-3.0.zip) to the root directory
+ (for example to c:
+\backslash
+ or d:
+\backslash
+ do not put in the directory.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-13.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Ekstract psenayan*.zip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, extract psenayan*.zip file to the root directory directly.
+ After that, psenayan folder will be created in your directory.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-14.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Psenayan folder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-15.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+File and Folder on psenayan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Go to psenayan directory, and double click at apache_start.bat
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-16.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Firewall message
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the Windows Firewall is active, commonly the pop-up Windows security
+ alert will be appeared.
+ Just click on the unblock option to give a permission to run Apache Web
+ Server in your computer.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-17.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Apache is running well
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Apache Web Server is running well when you see the message Apache2 is
+ starting.
+ Do not close this message, you just minimize it.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-18.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Firewall message
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-19.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+MySQL is running well
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next, open the mysql databse server.
+ Double click at the mysql_start.bat file.
+ The mysql database server is running well if you see the message mysql
+ already for connection.
+ Do not close this message, you just minimize it
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-20.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Senayan ready for use
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then open your browser, and type http://localhost you will see the OPAC
+ of SENAYAN
+\end_layout
+
+\begin_layout Standard
+To log in administration menu, please click Librarian Login.
+ In this page you must fill the username and password.
+\end_layout
+
+\begin_layout Standard
+The default username and password are; 
+\end_layout
+
+\begin_layout Standard
+username : admin 
+\end_layout
+
+\begin_layout Standard
+password : admin 
+\end_layout
+
+\begin_layout Chapter*
+Bibliography
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+Libraries are not made; they grow.
+ - Augustine Birrell
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Modul Bibliography consists of Add New Bibliography menu, List of Bibliograpic
+ (shows list of all bibliography data), Item List (shows list of all items/copie
+s) and Checkout Items (shows list of on loan items).
+ Clicking each menu will show you different list of bibliographic related
+ informations.
+ Other menu in this module are Labels Printing (for printing book spine
+ label), Item Barcode Printing (for printing bar code items), Import, and
+ Export bibliographic data.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Add New Bibliography Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Use this option menu to add new bibliography data.
+ The screen provide you with fields of bibliographic data as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Form to add the bibliographic data 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Title : Title of document/collection 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Edition : Statements of edition 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Author : Statements of authority 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+GMD : General Material Designation 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+ISBN/ISSN : ISBN or ISSN number 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Class : Classification number/Code for the collection (DDC, UDC, LC etc).
+ *Make sure this field be filled for Stock Take activities.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Publisher : Publisher of document/collection 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Master File Publish Year : Year of publication 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Place : Place of publication 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Collation : Physical Descriptions 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Series Title : Title Series if available 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Call Number 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Topics : Or Subjects.
+ The topics can be type in or taken from Subjects master file 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Language : Language of the documents 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Abstract/Notes : Important notes on document/collection 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Image : File image (of cover page) that represent the collection.
+ The image will appear on OPAC list
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Attachment : Provide electronic/digital file(s) that relate to the document/coll
+ections (e.g.
+ image of list of content page, pdf or html version)
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Click Save when you done filling the box.
+ A window pop-up will let you know if the saving procedure is successful.
+ An addition of form fields will appear under the Edition field following
+ the process.
+ This form allow user insert new items of the document/collection.
+ Items can be considerate as copies of documents, where every copy has to
+ have a unique code to be used as Bar Code.
+ Clicking Add New Item will allow user to add new unique code as many as
+ possible in the pop-up window as shown next.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-item-new.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Pop-up window to add item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The Item form will need a mandatory fields to be filled in:
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Title Item code 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Inventory Code 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Call Number
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Location 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Site/Placement Collection Type 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Item Status 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Order Number 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Order Date 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Received Date 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Supplier 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Item Source 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Invoice 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Invoice Date 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Price 
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Bibliographic List Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Use this menu to show all bibliographic data available in the database.
+ Informations display for each bibliography consists of Title, Author(s),
+ ISBN/ISSN, number of Copies, and Last Update date.
+ The list allow custom sort for display by clicking the table header.
+ From the list, user may search, edit, or delete the bibliographic data.
+ These are steps to edit or to delete the bibliography from the menu.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Search the bibliography you want to edit or to delete by typing the keyword
+ in Search box.
+ Select what field you prefer, and click Search.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+On result list, find the record, checked the check box and click the Delete
+ Selected Data, or click the edit icon (next to the title) if you want to
+ edit the record
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+If you editing the record, bibliography detail for the document will be
+ displayed.
+ The display is not allowing user to edit at this moment.
+ You should click the Edit button on right top or right bottom corner of
+ the form to start editing.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Edit the necessary field and then clikc Save Change to store the changes.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-list.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Bibliographic list 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-edit.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Edit bibliography 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Item List Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu allow user to see all the items/copies available in the database.
+ Each line on the list shows the Item Code, Title, Type, Location, Class,
+ and Last Update date of the record.
+ Using this list, user may edit, or delete the item data.
+ These are the steps necessary to delete data:
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Find item by fill in the title or the unique item code on Search box.
+ Click Search to start find the item.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+A result list will shown the records match your search with check box option
+ to delete and edit icon.
+ Checked the check box than click the Delete Selected Data if you want to
+ delete the item, or click the edit icon to start editing record.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+When editing, a disable form of data item is displayed.
+ Activate the edit mode by clicking the Edit button on right top or right
+ bottom corner of the form.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Edit the necessary field and then click Save Change to store it.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/item-list.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+item list 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/item-edit.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+edit item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Checkout Items Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Provides list of currently checked-out items.
+ Information available on this list are Item Code, Member ID, Title, Loan
+ Date and Due Date (the outstanding due date is also listed).
+ You could also search by Title and by Item Code..
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-chekout.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Checkout item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Labels Printing Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+You will be able to print call number label for each bibliographic record.
+ Just do the following steps: 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Click Labels Printing.
+ You will see:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-labelprint.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Labels printing 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Tick the check box to choose item(s) you would like to print (maximum 50
+ items).
+ Tips: To select multiple items in a row, click the first item in a row,
+ then press/hold Shift while clicking the last item in a row you want to
+ print.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Click Add to Print Queue
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Click Print Selected Data to start printing.
+ A pop-up will ask you to choose printer and set printer settings.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bib-labelprint.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Printing is Finished 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bib-labeljadi.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Printing Result
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Item Barcodes Printing Menu 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+This menu allows you to print barcode label for each item in the database.
+ To print just follow these steps:
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Click Item Barcode Printing.
+ You will see:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bib-prinbarcode.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+item barcode printing 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Tick the check box to choose item(s) you would like to print the barcode
+ (maximum 50 items).
+ Tips: To select multiple items in a row, click the first item in a row,
+ then press/hold Shift while clicking the last item in a row you want to
+ print.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Click Add to Print Queue 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Click Print Selected Data to start printing.
+ A pop-up will ask you to choose printer and set printer settings 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bib-labelprint.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Printing is Finished 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bib-bar-jadi.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Print Result
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Import Data Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+This menu is used to import bibliographic data from other sources to be
+ added to your Senayan application database.
+ The bibliographic data must be in csv format
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Export Data Menu 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Export Data is used to export bibliographic data from one Senayan application
+ database to be input/added to another Senayan application database.
+ Thus, this menu is use to exchange bibliographic data.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The Export Data will give you a .csv file whilst the Import Data will need
+ a .csv file format.
+ In the .csv format the following information will be listed in sequence:
+ Title, GMD, Edition, ISBN, Publisher, Publish Year, Collation, Series Title,
+ Call Number, Language, Place of Publication, Classification, Abstract/Notes,
+ Image File, File Attachment, Author, Subject.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Example: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+"PHP 5 for dummies","Printed Book","","0764541668","Wiley","2004",
+\newline
+"xiv,
+ 392 p.
+ : ill.
+ ; 24 cm.","For dummies","005.13/3-22 Jan p",
+\newline
+"English","Hoboken, NJ","005.13/3
+ 22","","php5_dummies.jpg",
+\newline
+"","<Valade, Janet>","<Programming><Website>"
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+You will see the following form: 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-eksport.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Bibliographic Export
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Note:
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Field Separator: define the symbol used to separate each field
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Field Enclosed With: define the character to begin/end the field
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Field Record Separator : Pemisah antar Record 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Number of Record to Export: number of record you want to export
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Start From Record: type the beginning of record number to export
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-import.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Bibliographic Import 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Note:
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+File to Import: File to import, must be in .csv format in accordance with
+ .csv format used by Senayan (see the above example)
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Field Separator: define the symbol used to separate each field 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Field Enclosed With: define the character to begin/end the field
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Number of Record to Import: number of record you want to import
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Start From Record: type the beginning of record number to import
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Membership
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+Your library is your portrait.
+ - Holbrook Jackson
+\newline
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The Membership Module is used for processing the membership data.
+ There are many menus in this module, such as:
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+View Member List Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu is used to view membership list that has been registered in the
+ system.
+ The menu is consisting of Member ID, Member Name, Membership Type, E-mail,
+ and Last Update.
+ The menu also has a DELETE and EDIT facility.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-list.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Member List
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Member ID : please insert in this column the unique id or library membership
+ card number Member Name : insert in this column member name such as forename,
+ surname, last name, and family name) Register Date : The Register Date
+ will be set as default as the the date in the server.
+ Expire Date : The Expire Date of the membership can be set in this column
+ according to the library rules.
+ (e.g register date is set on Jan 1st, 2009 and the Expire Date is set on
+ Jan 1st, 2010.
+ it means that the Expire Date of membership is one year) Institution :
+ insert in this column the name of member institution (name of office, corporate
+, etc.) Membership Type : choose in this column the type of membership.
+ You can set the Membership Type in Member Type.
+ (e.g type of membership can be divided into several type such as Student,
+ Teacher, Staff, Premium, Regular, and Silver.
+ The division of membership type will give different rules and privileges
+ according yo your library rules.
+ For example the student can borrow only one book, and the teacher can borrow
+ two books.) Gender : in this column, you can choose the gender of your member
+ whether female or male E-mail : insert the e-mail address of member Address
+ : insert the address of member Postal code : Phone number : insert the
+ fix phone number or mobile phone number of member Fax number : insert the
+ fax number of member Personal ID Number : insert the ID card number of
+ member Notes : you can type the brief information of member.
+ Upload Photo : you can upload the image file (photograph of member)
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+There is an Auto Set facility in the Expire Date.
+ This facility is used to set the Expire Date automatically based on the
+ setting of expired membership in the Membership Type.
+ When you check in it, then the Expire Date will be set automatically.
+ But if you uncheck it, then you can set the Expire Date manually 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu also provides Pending Membership feature.
+ If you check in it, then the member can not do any circulation activities
+ such as lending, and reserving the book, although the membership is still
+ active.
+ You can use this facility as a punishment for those who break the library
+ rules.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-add.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Form Add New Member 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Member Type Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu will define a type of membership.
+ You can define the loan limit, the loan period, Reserve, Reserve limit,
+ Membership Period, Re-borrow limit, Fine Each Day, and Overdue Grace Period.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-type.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Member Type 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Import Data 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+You can Import the membership data file from other place.
+ The file must be in *.csv format
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Export Data 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu is used to export the membership data into *.csv file
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The outputs of export as you see below:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+"M001","Hendro Wicaksono","0","Mahasiswa","hendrowicaksono@yahoo.com",
+\newline
+"Jakarta","
+99999","Perpustakaan DIKNAS","","member_M001.jpeg","KTP No.
+\newline
+ 123","99999","99999","
+2008-12-25","2008-12-25","2009-12-25",
+\newline
+"Anggota Teladan tahun 2006" 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-eksport.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Member Eksport 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-import.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Member Import 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Member Card
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu is used to print out the member card.
+ You can print out the library member card as you print out the label or
+ barcode in Bibliography Module.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The library member card that have been printed out gives you the information
+ such as, barcode or Member card number, Name of member, Member Type, Photo,
+ and the name of your library.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/mem-car.png
+	scale 45
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Member Card
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Circulation
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+What in the world would we do without our libraries? --Katherine Hepburn
+\newline
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The module is used to process the circulation.
+ The circulation module is provides the menus such as: 
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Start Transaction Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu is used to start the circulation, such as borrowing, returning,
+ reserving the collection, or extending the loan period.
+ To start the transaction, first, type or scan the Member ID (library membership
+ card number).
+ Then it shows the information such as Member Name, Member e-mail, Register
+ Date, Member ID, Member Type, Expire Date, photograph of member.
+ On the bellow of those information, the menu shows the information such
+ as Loans, Current Loan, Reserve Fines, Loan History.
+ The Current Loans also provides the facilities for returning and exending
+ the loans.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sirk-mulai.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Circulation Proceses 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\lang bahasa
+Notes: 
+\end_layout
+
+\begin_layout Quotation
+
+\lang bahasa
+After you have finished the transaction, do not forget to finish the transaction
+ by clicking the Finish Transaction.
+ The transactions are not recorded in the system if you do not follow this
+ step.
+ 
+\end_layout
+
+\begin_layout Quote
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Quick Return Menu
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+The menu is used to return the collection that are borrowed.
+ Please type or scan the Item Id of collections to return them.
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sirk-quick.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Quick Return 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Loan Rules Menu
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+Loan Rules menu is a menu that used for defining the loan rules based on
+ the Member Type, Collection Type, and GMD.
+ The rules that has been defined in this facilities are loan limit, loan
+ period, re-borrow limit, fine each day and overdue grace period.
+ 
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sirk-loanrules.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Loan Rules 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Loan History Menu
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+The menus consist of the history of transaction.
+ The menu will show the information such as Member ID, Member Name, Item
+ Code, Title, Load date, and Due date.
+ The menu also provides the facility for printing out the history of data.
+ There are many way to search the history.
+ We can search them based on Member ID, Member Name, the Document title,
+ Item Code, Load Data From and Load Data Until.
+ The facility can be viewed by clicking the Show More Filter Option bottom
+ 
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sirk-loanhys.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Loan History 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Overdued List Menu
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+The overdue list menu is used to perceive and notice the overdue list of
+ members.
+ In this menu, the information that will be shown are Member ID, Member
+ Name, Title, the amount of overdue (in days), loan date, due date.
+ The menu also provides the facilities for printing out and searching the
+ overdue list.
+ You can search the overdue list by Member ID or member name, Loan Date
+ From, Loan Date untill.
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sirk-loanover.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Loan Overdued 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Reserve Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu is used to view the list of collections that have been reserved
+ by members.
+ The information that you can see in this menu is Item Code, Title, Member,
+ and Reserve Date.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\noindent
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sirk-reserv.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Reservation List
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Stoke Take
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+I have always imagined that Paradise will be a kind of library.
+ --Jorge Luis Borges
+\newline
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The Stock Take module is a facility to help the Library perform the stock
+ opname.
+ When the stock opname process begins, all item in the collection (except
+ currently on-loan items) will be considered as missing.
+ The list of considered missing items is stored in Current Lost Item until
+ they are checked against the collection during the stock take process.
+ The Menu on this module are:
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Stock Take History 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Lists reports of stock opname which had been done.
+ Information on this menu: Stock Take Name, Start Date, End Date, and Report.
+ Report provides link to Stock Take reports in hmtl format.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_history.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Stock Take History 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Current Stock Take 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Current Stock Take is the main menu of stock take process.
+ When the stock opname process begins, all item in the collection (except
+ currently on-loan items) will be considered as missing.
+ Use this menu to change the status of library collection from considered
+ missing by system to available.
+ Item ID of the collection (the barcode number) is the access point to change
+ the status from missing to available.
+ Do this by entering the barcode in the Item Code column.
+ Current Stock Take menu will not function without the Initialize process
+ OR.
+ This menu cannot be used without the Initialize process.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_current1.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+not yet functioning Current Stock Take
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Stock Take Report 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Use this menu to see the result of the Stock Take done by the Library.
+ The report consist of information such as how many items are missing and
+ items currently on-loan.
+ Stock Take Report menu will not function without the Initialize process
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_report1.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+not yet functioning Stock Take Report
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Initialize 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Use this menu to start the stock opname.
+ The sub-menus are: 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Stock Take Name is the name of the stock take activity.
+ Stock Take Name must be filled in and cannot be empty.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+GMD (Please refer to Master File module guidelines OR manual => GMD (under
+ Authority Files)
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Collection Type (Please refer to Master File module guidelines OR manual
+ => Collection Type (under Lookup Files) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Location (Please refer to Master File module guidelines OR manual => Location
+ (under Authority Files)
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Site/Placement refers to item information on Bibliography module
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Classification refers to sub-menu class in Bibliography module.
+ Use wildcard character (*) for range of class, for example type 1* to 3*
+ if you want to stock opname collection from class 100 until 300.
+ If you type 1* it means you will stock opname class 100 only.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_initilaize.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Initialize 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_initialized.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Proses Initialize 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+After the Initialize process is done, the Current Stock Take and Stock Take
+ Report will serve as the menu for stock take activity.
+ Other additional stock take menus are Finish Stock Take, Current Lost Items,
+ Stock Take Log, and Re-synchronize (See illustration).
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Current Stock Take 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Current Stock Take menu is used to change the status of library collection
+ from considered missing by system to available.
+ Just enter the barcode to Item Code column.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_current2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Functional Current Stock Take menu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Stock Take Report 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Use this menu to see the report or result of stock take activity.
+ The report consists of information such as number of library items lost
+ etc.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_report2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Functional Stock Take Report
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Finish Stock Take 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Use this menu if you had finished your stock opname.
+ There is sub-menu Purge Lost Item on Finish Stock Take.
+ If we tick Yes, the item data of bibliography on Current Lost Item will
+ be gone.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_finish.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Finish Stock Take 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Current Lost Items 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Consists of items considered missing by the system, excluding the on-loan
+ items.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_current_lost.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Current Lost Item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Stock take Log 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The menu functions as a Log for stock take process.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_log.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Stock Take Log 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Resyncronize 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+During the stock take process, there will be changes in the bibliographic
+ data (thus the bibliographic data is edited).
+ The Re-synchronize menu is used to synchronize the edited bibliographic
+ data with the bibliographic data in Stock Take module.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/stocktake_resyncronize.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Resyncronize 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Reporting
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+Librarians are subversive.
+ You think they're just sitting there at the desk, all quiet and everything.
+ They're like plotting the revolution.
+ --Michael Moore
+\newline
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The containts of Reposting Modul is the information of the library activity.
+ Information can be accessed from the left navigation.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Collection Statistic Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Collection Statistic Menu contains total of collection title, total items/copies
+, total checkout item, total items in library, total item by medium/GMD,
+ total item by collection type, and the 10 most popular title.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-colstat.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Collection Statistic Summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Loan Report Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+From the loan Report Menu, we can get information about total loan, total
+ loan by GMD/medium, total loan by collection type, total loan transaction,
+ transaction average/perday, total peak transactions, member already had
+ loan, members never had loan yet, total overdued loan.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-loanrep.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Loan Report Menu 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Membership Report 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contains of membership information.
+ There are total registered members, total active members, total member
+ by membership type, total expired members, and 10 most active members.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-memrep.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Member Report 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\lang bahasa
+We can get the printout of the report by click Download Report.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Titles Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contain report or list of the title.
+ We can sort, print the report and filter the report.
+ Use the 
+\begin_inset LatexCommand url
+target "Show More Filter Options"
+
+\end_inset
+
+.
+ The filter facility is:Title/ISBN, Author, Classification, Langage and
+ Location.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-title.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Title Report 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Items title List Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contains the report or list of item.
+ We can sort or print the report.
+ We can filter the report with Title/ISBN.
+ But we can use more filter option by click 
+\begin_inset LatexCommand url
+target "Show More Filter Options"
+
+\end_inset
+
+.
+ The complete filter is: Title/ISBN, Item Code, Classification, Collection
+ Type, Status, Location.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-item.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Item Title List 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Member List Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contains report/list of the library members.
+ We can sort and print the report, also filter the report by Membership
+ Type, Member ID/Member Name, Gender, Address, Register Date From, Register
+ Date Until.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-member.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Member List Report
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Loan History Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contains report/list of the library circulation history.
+ We can sort, filter and print the report.
+ To filter we can type Member ID or Member name.
+ Or we can use the complete filter option by click 
+\begin_inset LatexCommand url
+target "Show More Filter Options"
+
+\end_inset
+
+.
+ The complete option is Member ID, Document title, item Code, Loan date
+ from, loan date until.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-loanhys.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Loan History 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Overdued List Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contains report/list of overdued loan.
+ Berisi laporan/daftar keterlambatan pengembalian anggota perpustakaan.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-overdu.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Overdue 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Staff Activity
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+This report show the activity of the library staff.
+ The information consist of: Username, Login Name, Bibliografy data entry,
+ Item data Entry, Member data entry, and Circulation.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep_staffactv.png
+	scale 50
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Staff Activity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Class Recap
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Show the recapitulation of the collection.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep_classrep.png
+	scale 55
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Class Recap
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Systems
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+The library is an arena of possibility, opening both a window into the soul
+ and a door onto the world.
+ --Rita Dove
+\newline
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Systems Modul contains of: 
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+System Configuration Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+This menu use to set the senayan system configuration.
+ They are Library Name, Public Template (OPAC), Default Application Language,
+ Admin Template, Number of Collections to Show in OPAC Result list, Disable/Enab
+le Quick Return, Loan Limit Overrride, Disable/Enable detail XML in OPAC,
+ Disable/Enable XML result in OPAC, Allow OPAC File Download, Session Login
+ Timeout.
+ From this menu, we can also know the senayan version.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-config.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Global Senayan Configuration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Modules Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Consists of Module List, search, Edit and Delete Modul, also Add New Module.
+ To add the new module, we can put the new modul (in the folder) 
+\begin_inset LatexCommand url
+target "admin/modules/"
+
+\end_inset
+
+.
+ Then click Add New Modules, type the information of the new module, Module
+ Name, Module Path, Module Description and click Save.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-modulist.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Module List 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-newmod.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Add New Module 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+System User Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+We can add the new user here.
+ Users can login with their username and password, also accesed the modual
+ depend on their groups.
+ The facility of this menu is: Add New User, Users List , Search , Edit
+ and delete user.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-addsysuser.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+add User
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+User Groups Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+We can define the Groups of the User here.
+ The groups can set with the different permissions.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-usergroup.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+User Group
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Holiday Setting Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Holiday Setting Menu is to define the library holiday.
+ The holiday setting is separate into two type.
+ Fist is special holiday, and second is the routine holiday.
+ The holiday setting impact to the fine count and the borrowing duration.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-holset.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Set Holiday 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-addspechol.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Add Special Holiday 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+For the routine holiday, the librarian just checkbox the holiday.
+ For Special holiday, librarian must define date, month, year and holiday
+ descriptions.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Barcode Generator 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+We can generate barcode here.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-barc-awal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Form to generate barcode 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-barcode.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+result of Barcode Generator 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+To generate the barcode, we must type the real code of the barcode (number
+ and font), choose the barcode size and click Generate Barcode button.
+ The result is .html and we can print it.
+ Encoding of the barcode is 128B, and we can change from the sysconfig.inc.php
+ file.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+$sysconf['barcode_encoding'] = '128B';
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+System Logs Menu 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contains the records process of Senayan.
+ The record is consist of Time, Location and Message.
+ Message is inform the User/Administrator, what they do, when and where
+ (Internet protocol).
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-log.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+System Logs 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+System log menu also give the SAVE LOGS TO FILES facility.
+ We can Save the logs, then click CLEAR LOGS to clear the screen.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Backup Database Menu
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The librarian can backup database here.
+ Before backup database, we must define the path of the mysqldump.
+ Open sysconfig.inc.php file, and edit the path.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+$sysconf['mysqldump'] = '/usr/bin/mysqldump';
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+change /usr/bin/mysqldump appropriate with path of mysqldump.Click Start
+ New Backup to start backup.
+ The result is the .sql file.
+ For example: backup_20080501_123106.sql.
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Master File
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+When I got my library card, that's when my life began.
+ --Rita Mae Brown
+\newline
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+In the master file module we can put the data that is used as a master in
+ the bibliography data entry.
+ The data that can be define in the master file module is:
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+GMD general material designation is a physical tupe of collection or information
+ storage media.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Publisher.
+ It’s filled with publisher name.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Supplier is a supplier data that was a library partner to get the collection
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Author.
+ It’s filled with name & the various of the author (individu or groups)
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Topic.
+ It’s filled with topic/subject of data collection.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Location.
+ It’s filled with the location & placement location name of the collection.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Place.
+ It’s filed with the publisher place.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Item status.
+ It’s filled with the item status (repair, on loan, returned).
+ On this item status is filed with stauts code, item status name & rules.
+ There are two choice in the rules: no loan transaction (item can’t be loan,
+ example digital collection) & skipped by stock take (not process in the
+ stock take) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Collection type.
+ It’s filled with the collection type that’s owned by library, example textbook,
+ reference.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Doc.
+ Language.
+ It’s filled with language that’s used in the document.
+ Example Indonesian, English, france, javanesse, etc.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+*) Publisher, author, & topic beside can be filled from master file also
+ can be filed when to fill of bibliography data.
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+OPAC
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+The library is not only a diary of the human race, but marks an act of faith
+ in the continuity of humanity.
+ --Vartan Gregorian 
+\newline
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Opac is search engine that’s allocated for user.
+ In this Senayan, OPAC consist of simple search, advance search, library
+ information navigation , Help on search navigation and library login.
+ In the simple search, you can search by typing the keyword on the column
+ that’s available.
+ In the advance search, there are three search column is for title, author,
+ and subject.
+ To get the searching precission there are location choice too.
+ Information on the library information can adopted wirh library/institution
+ by by editing libnfo.inc.php file that’s located in lib folder.
+ And to change help on search can do it by editing help.inc.php file that’s
+ located on the lib folder.
+ The first bibliography search result appearance in opac contained of picture/im
+age, title, and author.
+ In addition, it’s added with detail button (to see bibliography data detail)
+ and XML (to get XML format).
+ Detail appearance contained os title information, edition, call number,
+ ISSN/ISBN, author, topics, classification, series, title, GMD, language,
+ publisher, publish year, publice place, collation, abstract/notes, location,
+ image and file attachement that’s can to download, availability (information
+ of total, availability, and loaned item), topics and authorthat’s related
+ interdocument.
+ So, when click topics or author in OPAC detail will appear the document
+ with the same topic or author.
+ Facilities to change the introduction language is available too in OPAC.
+ There are two that’s available, it’s Indonesian and English 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Opac
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac_det.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Detail Opac
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac_xml.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+XML Opac
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Custom Field Record List
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+In this senayan stable 8 aplication is added with facilities to show customize
+ field record.
+ This adding can do by editing dile [custom_frontpage_record.inc.php] that’s
+ available on OPAC template folder.
+ If you want to change the appearance, you must edited file [custom_frontpage_re
+cord.inc.php] that’s available on [template/default/].
+ This file contain of:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// change "0" value to "1" to enable field
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// $custom_fields['edition'] = array(1, lang_mod_biblio_field_edition);
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$custom_fields['edition'] = array(0, lang_mod_biblio_field_edition); 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$custom_fields['isbn_issn'] = array(0, lang_mod_biblio_field_isbn); 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$custom_fields['collation'] = array(0, lang_mod_biblio_field_collation);
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$custom_fields['series_title'] = array(0, lang_mod_biblio_field_series);
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$custom_fields['call_number'] = array(1, lang_mod_biblio_field_call_number);
+ 
+\end_layout
+
+\begin_layout Chapter*
+
+\lang bahasa
+Tips and Trick
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+Knowledge is free at the library.
+ Just bring your own container.
+ - Unknown
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Setting barcode, label, and member card size.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Setting barcode and label size by editing printed_setting.inc.php file that’s
+ located in [/senayan3-stable7/admin/admin_template/].
+ In this file will found the row code below:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// label print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+/* measurement in cm */
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$page_width = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$page_height = 30;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$items_per_row = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$items_margin = 0.05;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$box_width = 8;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$box_height = 3.3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$include_header_text = 1; // change to 0 if dont want to use header in each
+ label
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$header_text = ''; // keep empty if you want to use Library Name as a header
+ text
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// item barcode print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+/* measurement in cm */
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_page_width = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_page_height = 30;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_items_per_row = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_items_margin = 0.1;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_box_width = 7;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_box_height = 5;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_include_header_text = 1; // change to 0 if dont want to use header
+ in each barcode
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_cut_title = 50; // maximum characters in title to appear in each
+ barcode.
+ change to 0 if you dont want the title cutted
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_header_text = ''; // keep empty if you want to use Library Name
+ as a header text
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// member card print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+/* measurement in cm */
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_page_width = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_page_height = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_items_per_row = 2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_items_margin = 0.1;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_box_width = 11;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_box_height = 6;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_header_text = $sysconf['library_name'];
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_photo_width = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_photo_height = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// barcode generator print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_page_width = 29.7;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_page_height = 21;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_items_margin = 0.05;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_include_border = 0;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+?>
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+If you want the setting of barcode, label and member card is different in
+ any template, you can copying [print_setting.inc.php] file into any admin
+ template, and change by your self.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+searching in OPAC with minimum 3 character keyword.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+open my.ini file that’s located in [/mysql/my.ini] on 43 rows and write script
+ below: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+ft_min_word_len=3 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+save and restart mysql server
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Open senayan database with phpmyadmin.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Click biblio table, and then look at indexes on under.
+ You will found title_ft keyname with title field.
+ Erase that rows by click X
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Menghapus index title_ft
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+On create an index on fill 1 and click Go, and will appear the appearance
+ below:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Penambahan Index MySql
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Fill blank columns above and will see below:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Hasil Penambahan Index MySql
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+you must to change is: index name, index type and field then click save.
+ Restart your mysql, and senayan OPAC can search by 3 keyword character.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Tutorial Upgrade Application of Senayan library 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+This short article is explain how to do upgrade application of senayan library
+ ([http://senayan.diknas.go.id]).
+ From senayan3-stable4 version to senayan3-stable5.
+ but this upgrade way is done for the other verses too.
+ For the easier, Used platform PHP and MySQL from senayan portable 3.3 where
+ it’s already include with senayan3-stable4 inside.
+ But this way is for universal, not specific only for senayan portable.
+ Browser that used in this tutorial is Mozilla Firefox.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+First Thing First: Back-up!
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Yesterday – The Beatles
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Yesterday, All those backups seemed a waste of pay 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Now my database has gone away 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Oh I believe in yesterday.....
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Suddenly, 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+There's not half the files there used to be 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+And there's a milestone hanging over me 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+The system crashed so suddenly
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+I pushed something wrong 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+What it was I could not say 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Now all my data's gone and I long for yesterday-ay-ay-ay
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Yesterday, 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+The need for back-ups seemed so far away 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+I knew my data was all here to stay 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\lang bahasa
+Now I believe in yesterday
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Before the case of natural unwanted happened.
+ For example : broken harddisk, always do back-up of it.
+ Electronic data is data that vulnerable, because of that, back up activity
+ is an obligation when you feel this data is important.
+ Store the results of back-up in place of/ a separate computer.
+ For easiest of examples in this article, back-up stored on the same computer.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+For senayan application, there are 2 sections that should be in the backup.
+ First, application folder, second database MySQL.
+ To backup application folder, just copy and paste than give different name
+ from folder senayan3-stable4, whichfound in psenayan/apache/htdocs.to 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/A1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Backup Folder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+backup database MySQL, from phpMyAdmin, login as root, open database senayan
+ and choose tab export.
+ Don’t forget to check the option “save as file” than click “Go”.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Abackup di phpmyadmin.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Backup di PhpMyadmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Aphpmyadmin_popup.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Akan muncul pop up menu, pilih Save File, dan klik OK.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Can also make back-up database through command-line 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Abac_comanline.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Backup melalui Command Line
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Ahasil_back.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Hasil Backup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Process of senayan upgrade 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Download senayan3-stable5.tar.gz from [http//senayan.diknas.go.id].
+ put in htdocs folder and than extract.
+ Latter will form folder senayan3-stable5.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Aextrak.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Ekstrak Master baru
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Ahasilekstrak.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Hasil Ekstrak Master baru
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Enter to folder senayan3-stable5, and open file sysconfig.inc.php with editor
+ text is like notepad or wordpad.
+ Look at following this line : 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+define('DB_USERNAME', 'senayanuser'); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+define('DB_PASSWORD', 'password_senayanuser');
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+in default of senayan distribution, has made username senayanuser with password
+ password_senayanuser ( without pick mark ) to the consideration of safety,
+ very suggestion to change it.
+ In senayan portable, there are 2 way to change password in MySQL.
+ First, used phpMyAdmin.
+ Login to phpMyAdmin with user root.
+ Open database mysql than open table user than click icon of pensil whichfound
+ on user line of senayanuser to edit profile of senayanuser.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Auserdiphpmyadmin.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Ubas Pass User MySql
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Choose the function of password to colomn function.
+ Than in colomn value for line of field password, enter new password which
+ wanted.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Aganti_passuser.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Mengganti Password User MySql
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Transformation of password can’t be used directly.
+ So that new password can used, on phpMyAdmin click tab SQL, clicking FLUSHPRIVI
+LEGES and click Go.
+ Or with restart mysql with doble click mysql_stop.bat than mysql_start.bat.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Aflushpriv.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Flush Priviledge
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+The other way to change password in mysql is through command–line.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Aubahpass_console.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Mengubah Pass lewat Command Line
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+That is same if want to change default password possession of user root.
+ Don’t forget to edit sysconfig.inc.php and suitable with new password.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Next to update structure of senayan database so that compliant with senayan3-sta
+ble5.
+ through phpMyAdmin, login as senayan user or root.
+ Open of senayan database and click tab SQL.
+ With editor text ( notepad or wordpad ), open file upgrade_stable5.
+ sql whichfound in folder [psenayan
+\backslash
+apache
+\backslash
+htdocs
+\backslash
+senayan3-stable5
+\backslash
+sql
+\backslash
+upgrade].
+ Than copy all of text.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Aupg_copysource.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Mengkopi Source Upgrade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Paste to phpMyAdmin and click Go.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Apaste_source.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Paste Di PhpMyadmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+If success there is message“Your SQL query has been executed successfully”.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Finally is copy folder “images” and “files” from folder senayan3-stable4and
+ pasto to folder senayan3-stable5.
+ if there is message “Confirm Folder Replace” (This folder already contains
+ a folder named 'images'), choose “Yes to All” (overwrite).
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Acopy.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Mengkopi folder images dan files
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/Apaste.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Paste folder images dan files
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Ok, now senayan have done upgrade.
+ Please try to login again to senayan application.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-config.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Standard
+
+\lang bahasa
+Informasi System di Senayan baru
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+After success login if still error, usually related with : 1.
+ folder images and files can’t be written, it’s mean you have to give web
+ server of write access to that folder.
+ This matter seldem of case in windows, usually this case in linux because
+ related with permission file.
+ To change it, as root in linux, please command chmod –R 777 files images.for
+ more detail please read manual of senayan.
+ 2.
+ Error The PATH for mysqldump program is not right!.
+ because program mysqldump ( which needed senayan to do backup) before in
+ link favorably.
+ If use portable senayan, edit file sysconfig.inc.php and change of line $sysconf
+ [ ‘mysqldump’] = ‘ [/usr/local/server/mysql5/bln/mysqldunp] ‘ ; become
+ [ $sysconf [ ‘ mysqldump ‘ ] = ‘ /psenayan/mysql/bin/mysqldump.exe] ‘ ;
+ So when the people want to automatic access never more in forward to folder
+ senayan3-stable4 but to senayan3-stable5, must be edit file index.php (
+ with notepad/ wordpad) whichfound in psenayan
+\backslash
+apache
+\backslash
+htdocs.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Change of line :
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+<?php header ("location: senayan3-stable4/"); ?>
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+become:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+<?php header ("location: senayan3-stable5/"); ?>
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Change or Create New Language
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Senayan contains two default language, there are English and Indonesia.
+ We can change or create the new language.
+ Its very easy.
+ Senayan language folder is in here 
+\begin_inset LatexCommand url
+target "/senayan3-stable7/lib/lang"
+
+\end_inset
+
+.
+ The name of the language file is appropriate with the langage.
+ For example: english.lang.inc.php untuk bahasa Inggris.
+ The step to create the langage is as the follow:
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Copy-Paste file indonesia.lang.inc.php in 
+\begin_inset LatexCommand url
+target "/senayan3-stable7/lib/lang"
+
+\end_inset
+
+, and give the new name, for example: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+java.lang.inc.php 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Open java.lang.inc.php, edit to change the language.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+example:
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+define('lang_sys_common_unauthorized', 'Anda tidak memiliki
+\newline
+ wewenang untuk
+ masuk ke bagian ini!'); 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+change to: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+define('lang_sys_common_unauthorized', 'Mboten angsal mlebet mriki....!'); 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Quotes eld
+\end_inset
+
+Mboten angsal mlebet mriki....!
+\begin_inset Quotes erd
+\end_inset
+
+ is the java language.
+\end_layout
+
+\end_body
+\end_document
